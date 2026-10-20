@@ -1,0 +1,24 @@
+use	software	version	access_or_run_date	url	evidence	status
+Sequence acquisition	UniProt	release not recorded	PENDING	https://www.uniprot.org/	Author records	PENDING date and release
+Sequence acquisition	Ensembl	June 2026 archive	2026-06 or later	https://jun2026.archive.ensembl.org/	The archive URL itself pins the Ensembl release used	release pinned by URL, confirm date
+Modeling	AlphaFold Server	3	2025-02	https://alphafoldserver.com	None on current hardware; previous workstation was lost in December 2025	RECOVER from the AlphaFold Server job history in the Google account
+Model relaxation and refinement of the CCT domain / peptide complex	ROSIE (Rosetta Online Server)	server version not recorded	PENDING	https://rosie.graylab.jhu.edu	Author records	PENDING date, ROSIE application used and its options
+Model accuracy evaluation	MolProbity	web server, no version	2025-02 (approximate)	https://molprobity.biochem.duke.edu/	None on current hardware; previous workstation was lost in December 2025	RECOVER from saved reports or email, or declare period only
+Structural similarity analysis	DALI	web server, no version	2025-12 to 2026-02	PENDING	Dated DALI output files on disk	date supported by files, URL pending
+Structural similarity analysis	Foldseek	web server, no version	2025-12 to 2026-02	PENDING	Dated Foldseek output folder on disk	date supported by files; later files from 2026-08/09 exist, confirm whether reported
+Protein alignment (MUSCLE)	MEGA	12.1.2	PENDING	n/a (desktop application)	Installed application bundle	version confirmed
+Protein alignment, evolutionary analysis	Geneious Prime	2026.0.2	PENDING	n/a (desktop application)	Installed application bundle	version confirmed
+Dendrogram editing	FigTree	1.4.5_pre	PENDING	n/a (desktop application)	Installed application bundle. The interface reports 1.4.5; the bundle records the pre-release build, which is the more precise value	version confirmed
+Structure visualization	UCSF ChimeraX	1.11.0 (build rc2025.12.14)	PENDING	n/a (desktop application)	Installed application bundle. The interface reports 1.11; the bundle records the release-candidate build, which is the more precise value	version confirmed
+Structure visualization and superposition	PyMOL	3.1.6.1	PENDING	n/a (desktop application)	Installed application bundle	version confirmed
+Molecular dynamics	OpenMM	8.5.1	PENDING	n/a (library)	Author inventory spreadsheet; the current workstation carries 8.6.1, which is NOT the version used	VERIFY against the simulation run log
+Trajectory frame sampling	Python	3.12.12	2026-08	n/a (language runtime)	pyvenv.cfg of the per-system virtual environments	confirmed
+Trajectory frame sampling	MDAnalysis	2.10.0	2026-08	n/a (library)	dist-info in the per-system virtual environments	confirmed
+Trajectory frame sampling	NumPy	2.5.2	2026-08	n/a (library)	dist-info in the per-system virtual environments	confirmed
+Trajectory frame sampling	SciPy	1.18.1	2026-08	n/a (library)	dist-info in the per-system virtual environments	confirmed
+Residue interaction network construction	RING	3 (web server)	2026-08-24 to 2026-08-25	PENDING	Creation dates of the 18 network JSON files per system	date from file timestamps, confirm against own records; URL pending
+Network visualization	Cytoscape	3.10.4	PENDING	n/a (desktop application)	Installed at /Applications/Cytoscape_v3.10.4, and cytoscape.version.number recorded in the user CytoscapeConfiguration properties	version confirmed
+Network post-processing	Python	3.12.12	2026-08	n/a (language runtime)	pyvenv.cfg of the analysis virtual environment	confirmed
+Network post-processing	pandas	3.0.5	2026-08	n/a (library)	dist-info in the representative-state virtual environment	confirmed
+Network post-processing	openpyxl	3.1.5	2026-08	n/a (library)	dist-info in the virtual environments	confirmed
+Network post-processing	custom scripts	see repository tag	2026-08	https://github.com/protere19/CCT_DOMAIN_PEPTIDE_NETWORKS	This repository	TAG AND ARCHIVE before submission; repository currently private

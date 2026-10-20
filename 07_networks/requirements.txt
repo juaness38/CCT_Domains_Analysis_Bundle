@@ -1,0 +1,7 @@
+# Not all steps need all of these.
+# build_consensus.py, filter_consensus.py and renumber_network.py need none of them.
+
+MDAnalysis>=2.0        # sample_ensembles.py
+numpy>=1.20            # sample_ensembles.py, select_representative_state.py
+pandas>=1.3            # select_representative_state.py
+openpyxl>=3.0          # select_representative_state.py, only for .xlsx reference tables

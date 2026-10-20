@@ -1,0 +1,33 @@
+# Trajectories and other large binaries are not versioned (see README "Large files not in this repository")
+*.dcd
+*.xtc
+*.trr
+*.nc
+*.h5
+*.dtr
+*.tng
+# multi-GB solvated dumps / archives
+*.zip
+*.tar
+*.tar.gz
+*.7z
+# secrets / local env
+.env
+.env.*
+*.pem
+*.key
+.venv/
+# python / editor noise
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# local agent and runbook docs with local paths
+AGENTS.md
+COMMIT_PUSH.md
+_final_frames_run.log
+_FINAL_FRAME_VERIFICATION_*.md
+06_output_example/*/analysis_rerun/
+

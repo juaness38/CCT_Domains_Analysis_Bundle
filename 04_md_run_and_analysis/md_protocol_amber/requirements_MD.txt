@@ -1,0 +1,8 @@
+openmm>=8.2
+mdtraj
+numpy
+pandas
+plotly
+scipy
+# RING: servidor web (Begue et al. 2025) + Cytoscape v3.10.4 (no pip)
+# AF3/Rosetta Relax/FlexPepDock/MolProbity/PyMOL/ChimeraX/MEGA/Geneious: ver Métodos del paper

@@ -1,0 +1,13 @@
+# MD environment of the SPAK CCT production run (March 2026), recovered from the conda
+# install log of that run (packages resolved from conda-forge) and from the State XML header
+# (openmmVersion="8.2"). Linux x86-64, NVIDIA GPU, CUDA platform.
+# Create with:  conda env create -f environment_md_run.yml
+name: cct_md_openmm82
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11.15
+  - openmm=8.2.0
+  - pdbfixer=1.12
+  - numpy=2.4.2
+  - cudatoolkit=11.8.0

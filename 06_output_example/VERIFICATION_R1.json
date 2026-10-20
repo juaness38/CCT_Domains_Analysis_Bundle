@@ -1,0 +1,16 @@
+{
+ "final_vs_equilibrated_protein_CA_rmsd_A": 2.3636155128479004,
+ "rmsd_csv_last_protein_CA_A": 2.5240061,
+ "rmsd_csv_last5pct_mean_protein_CA_A": 1.8988708789999997,
+ "sasa_final_frame_vs_mean_pearson_r": 0.9162318392272226,
+ "sasa_n_residues_compared": 113,
+ "state_time_ns": 202.49999977955233,
+ "energy_csv_last_time_ns": 202.4999997795523,
+ "energy_csv_matches_state_end": true,
+ "analysis_csv_identical_to_source": {
+  "dssp_per_residue.csv": true,
+  "rmsd.csv": true,
+  "rmsf.csv": true,
+  "sasa.csv": true
+ }
+}

@@ -1,0 +1,43 @@
+{
+  "_description": "Canonical UniProt residue mapping for all data in organized_by_system_bundle_20260327. Protein offsets verified by exact sequence alignment of each construct (from rmsf.csv residue_name, ordered by residue_pdb) against canonical UniProt sequences (rest.uniprot.org, Sep 2026). The earlier uniprot_offset_map.json was computed against embedded sequences that turned out non-canonical for O95747 (1-aa insertion), Q96J92 (1-aa deletion) and Q9Y3S1 (different 841-aa sequence), producing offsets off by one (osr1, wnk4) or wrong (wnk2). Supersedes it.",
+  "protein": {
+    "ferry_cctl": {"accession": "Q9NQ89", "gene": "FERRY3", "blocks": [{"pdb_start": 1, "pdb_end": 77, "offset": 0}], "identity": "77/77 (100%)"},
+    "spak_cct": {"accession": "Q9UEW8", "gene": "STK39", "blocks": [{"pdb_start": 1, "pdb_end": 98, "offset": 447}], "identity": "98/98 (100%)"},
+    "osr1_cct": {"accession": "O95747", "gene": "OXSR1", "blocks": [{"pdb_start": 1, "pdb_end": 96, "offset": 431}], "identity": "res2-96 -> 433-527 (8/8 anchor check); pdb 1 is an N-terminal Gly expression-tag residue numbered by continuity (432)", "note": "changed vs original +432"},
+    "wnk4_cctl2": {"accession": "Q96J92", "gene": "WNK4", "blocks": [{"pdb_start": 1, "pdb_end": 85, "offset": 666}], "identity": "85/85 (100%), 667-751", "note": "changed vs original +665"},
+    "wnk2_cctl1": {"accession": "Q9Y3S1", "gene": "WNK2", "blocks": [{"pdb_start": 1, "pdb_end": 28, "offset": 454}, {"pdb_start": 29, "pdb_end": 83, "offset": 461}], "identity": "construct = UniProt 455-544 with internal deletion of UniProt 483-489 (KLKGKPK); 10/10 anchor check", "note": "changed vs original +455 (single offset was invalid: non-canonical source sequence)"},
+    "nrbp1_cct": {"accession": "Q9UHY1", "gene": "NRBP1", "blocks": [{"pdb_start": 1, "pdb_end": 95, "offset": 440}], "identity": "95/95 (100%)"}
+  },
+  "ligands": {
+    "osr1_cct": {
+      "accession": "Q96J92", "gene": "WNK4", "sequence": "GRFQVT",
+      "mod_length": 6, "uniprot_start": 1015,
+      "evidence": "2V3S chains C/D (author 1003-1008) -> WNK4 1015-1020 via PDBe SIFTS; GRFQVT unique at canonical Q96J92 1015-1020. Both copies map by position in the 6-mer: ordinal 1-6 -> 1015-1020 (copy D in the bundle has 5 res -> 1015-1019)."
+    },
+    "wnk2_cctl1": {
+      "accession": "Q9H4A3", "gene": "WNK1", "sequence": "LTQVVHSAGRRFIVSPV",
+      "ranges": [{"pdb_start": 1, "pdb_end": 17, "offset": 1246}],
+      "evidence": "6FBK chain P -> WNK1 1247-1269 via PDBe SIFTS (identity 1.0); canonical exact match 1247-1263 for the simulated 17-mer."
+    },
+    "spak_cct": {
+      "accession": "Q96J92", "gene": "WNK4", "sequence": "KPQLVGRFQVTSSKE",
+      "ranges": [{"pdb_start": 1, "pdb_end": 15, "offset": 1009}],
+      "evidence": "exact unique match at canonical Q96J92 1010-1024 (same WNK4 RFxV motif region as OSR1 ligand)."
+    },
+    "wnk4_cctl2": {
+      "accession": "O75157", "gene": "TSC22D2", "sequence": "PAKKKSCFQITSVTT",
+      "ranges": [{"pdb_start": 1, "pdb_end": 15, "offset": 4}],
+      "evidence": "beta-phi-A motif (KKKSxFQITSV) of human TSC22D2: AF3 model WNK4(Q96J92)+TSC22D2(O75157-1), Magana-Avila et al. 2026 (DOI 10.64898/2026.04.15.718729). Exact unique match at canonical O75157 5-19; peptide file numbering 86-100 (ordinal 1-15) -> UniProt 5-19."
+    },
+    "nrbp1_cct": {
+      "accession": "O75157", "gene": "TSC22D2", "sequence": "EPYRRGRWTCMEYYE",
+      "ranges": [{"pdb_start": 1, "pdb_end": 15, "offset": 172}],
+      "evidence": "RWTC (beta-phi-B) motif region of TSC22D2, shown to mediate binding to NRBP1 (Amnekar et al.; Magana-Avila et al. 2026, DOI 10.64898/2026.04.15.718729). Exact unique match at canonical O75157 173-187; peptide file numbering 1-15 (ordinal 1-15) -> UniProt 173-187."
+    },
+    "ferry_cctl": {
+      "accession": "O75157", "gene": "TSC22D2", "sequence": "EPYRRGRWTCMEYYE",
+      "ranges": [{"pdb_start": 1, "pdb_end": 15, "offset": 172}],
+      "evidence": "same TSC22D2 RWTC-region peptide as nrbp1_cct; FERRY3 CCT-like interacts with TSC22D2 (Magana-Avila et al. 2026). Exact unique match at canonical O75157 173-187; peptide file numbering 78-92 (ordinal 1-15) -> UniProt 173-187."
+    }
+  }
+}

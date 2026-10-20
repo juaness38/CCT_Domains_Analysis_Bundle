@@ -1,0 +1,2 @@
+# store every file byte-for-byte so SHA256SUMS stay valid on any OS
+* -text
