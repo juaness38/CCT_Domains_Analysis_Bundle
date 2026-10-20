@@ -1,7 +1,7 @@
 # Reproducibility Package for: Determinants of CCT–motif specificity in WNK signaling and expansion ofCCT-like domains* — Magaña-Ávila et al., bioRxiv 2026
 https://doi.org/10.64898/2026.04.15.718729
 
-Canonical package for the Control-MD CCT/CCTL paper figures. It contains **exactly**
+ It contains **exactly**
 the scripts, data and final figures that produced the paper panels
 (palette: protein/CCT green + peptide orange, UniProt residue numbering). Nothing
 here is illustrative; the panels are regenerable from `02figure_scripts` + `03_data`.
@@ -171,6 +171,3 @@ Documentation, software versions, and dependencies: see `07_networks/README.md` 
 | File | Size | Where |
 |---|---|---|
 | Production trajectories `replica_*.dcd`, 6 systems x 2 replicas | ~6 GiB (SPAK: 20,000 frames x 27,549 atoms = 6.2 GiB) up to tens of GiB each | authors' storage, on request |
-
-No file in the repository is larger than 100 MB; SHA256 sums: `05_run_artifacts/SHA256SUMS.txt`,
-`06_output_example/SHA256SUMS.txt`.
